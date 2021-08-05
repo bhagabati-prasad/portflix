@@ -54,14 +54,6 @@ export const FormSection = styled.div`
         `}
     }
     form {
-      .chk_div label {
-        color: ${light_theme.op_body_bg};
-        ${({ darkMode }) =>
-          darkMode === 'dark' &&
-          css`
-            color: ${dark_theme.op_body_bg};
-          `}
-      }
       .form_box {
         width: 100%;
         display: flex;

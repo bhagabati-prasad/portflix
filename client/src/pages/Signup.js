@@ -187,7 +187,7 @@ const Signup = () => {
                   />
                 </div>
               </div>
-              <div className='chk_div mt-3'>
+              <div className='mt-3'>
                 <input
                   type='checkbox'
                   id='check'
