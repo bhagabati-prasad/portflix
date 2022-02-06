@@ -241,7 +241,7 @@ const Portfolio = () => {
               <div className='line'></div>
               <div className='domain'>
                 <h3>
-                  I'm A {userInfo?.fname}
+                  I'm A
                   <Typewriter
                     options={{
                       strings: userInfo?.domain && userInfo?.domain.split(','),
