@@ -30,7 +30,7 @@
     ".next/types/**/*.js",
     ".next/dev/types/**/*.js",
     "app/layout.jsx",
-    "app/page.jsx"
+    "app/(homepage)/page.jsx"
   ],
   "exclude": ["node_modules"]
 }
