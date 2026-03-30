@@ -40,7 +40,6 @@ section.hero_section {
             }
 
             .hero_secondary_row {
-                width: 65%;
 
                 .link_box {
                     border-radius: var(--border-radius);
@@ -60,14 +59,24 @@ section.hero_section {
 
 section.details_container {
     .custom-pixel-card {
-        border: 3px solid rgba(75, 28, 170, 0.432);
         border-radius: var(--border-radius);
+        background-color: rgb(2, 0, 128);
     }
 
     .details_pixel_primary_elem {
         position: relative;
 
         &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(40, 0, 151, 0.555);
+        }
+
+        &::after {
             content: '';
             position: absolute;
             top: 0;
@@ -95,5 +104,88 @@ section.details_container {
 
     to {
         background-position: 0% -100%;
+    }
+}
+
+
+.section_heading {
+    color: var(--foreground);
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 1rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        height: 5px;
+        width: 5px;
+        background-color: var(--foreground);
+        border-radius: 50%;
+    }
+}
+
+.details_main_desc {
+    color: var(--foreground);
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.honeycomb_box {
+    height: 120px;
+    width: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: mediumpurple;
+        box-shadow: inset 16px 17px 27px rgba(0, 0, 0, 0.05),
+            inset -16px -16px 27px #fff;
+        clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+        z-index: -1;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 99%;
+        width: 99%;
+        background-color: #000;
+        box-shadow: inset 16px 17px 27px rgba(0, 0, 0, 0.05),
+            inset -16px -16px 27px #000;
+        clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+        z-index: -1;
+        transition: transform 0.54s;
+    }
+
+    .honeycomb_box_content {
+        filter: drop-shadow(-2px -3px 10px rgba(0, 0, 0, 0.1));
+        position: relative;
+        transition: transform 0.54s;
+        letter-spacing: 0.5px;
+    }
+
+    &:hover::after,
+    &:hover .honeycomb_box_content {
+        transform: translate(18px, -4px);
     }
 }
