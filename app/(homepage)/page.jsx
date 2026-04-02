@@ -70,7 +70,7 @@ export default function Page() {
             <div className="grid grid-cols-3">
               <div className="col-span-2">
                 <h2 className="section_heading">About me</h2>
-                <h3 className="details_main_desc mb-8 w-3/4">
+                <h3 className="section_main_desc mb-8 w-3/4">
                   Passionate & Lead Product designer
                 </h3>
                 <p className="details_summary w-3/4">
@@ -119,31 +119,51 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-6 pt-(--section-padding)">
-              <div className="col-span-6">Skills</div>
-              <div className="honeycomb_box col-span-1">
-                <span className="honeycomb_box_content">HTML</span>
+          </div>
+        </div>
+      </section>
+      <section className="skills_container container mx-auto pb-(--section-padding)">
+        <div className="grid grid-cols-12">
+          <div className="col-span-2">
+            <h2 className="section_heading mt-2">Skills</h2>
+          </div>
+          <div className="col-span-10">
+            <h2 className="section_main_desc mb-8 w-1/2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+              amet.
+            </h2>
+            <div className="skill_stack_row w-full">
+              <div className="grid grid-cols-12">
+                <div className="col-span-1 flex items-center">
+                  <h4 className="-rotate-90">Frontend</h4>
+                </div>
+                <div className="col-span-11 flex flex-wrap items-center justify-start">
+                  <div className="honeycomb_box">
+                    <span className="honeycomb_box_content">React.js</span>
+                  </div>
+                  <div className="honeycomb_box">
+                    <span className="honeycomb_box_content">Angular</span>
+                  </div>
+                  <div className="honeycomb_box">
+                    <span className="honeycomb_box_content">TypeScript</span>
+                  </div>
+                </div>
               </div>
-              <div className="honeycomb_box col-span-1">
-                <span className="honeycomb_box_content">HTML</span>
-              </div>
-              <div className="honeycomb_box col-span-1">
-                <span className="honeycomb_box_content">HTML</span>
-              </div>
-              <div className="honeycomb_box col-span-1">
-                <span className="honeycomb_box_content">HTML</span>
-              </div>
-              <div className="honeycomb_box col-span-1">
-                <span className="honeycomb_box_content">HTML</span>
-              </div>
-              <div className="honeycomb_box col-span-1">
-                <span className="honeycomb_box_content">HTML</span>
-              </div>
-              <div className="honeycomb_box col-span-1">
-                <span className="honeycomb_box_content">HTML</span>
-              </div>
-              <div className="honeycomb_box col-span-1">
-                <span className="honeycomb_box_content">HTML</span>
+              <div className="grid grid-cols-12">
+                <div className="col-span-1 flex items-center">
+                  <h4 className="-rotate-90">backend</h4>
+                </div>
+                <div className="col-span-11 flex flex-wrap items-center justify-start">
+                  <div className="honeycomb_box">
+                    <span className="honeycomb_box_content">React.js</span>
+                  </div>
+                  <div className="honeycomb_box">
+                    <span className="honeycomb_box_content">Angular</span>
+                  </div>
+                  <div className="honeycomb_box">
+                    <span className="honeycomb_box_content">TypeScript</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
