@@ -65,6 +65,7 @@ section.details_container {
 
     .details_pixel_primary_elem {
         position: relative;
+        filter: grayscale(1);
 
         &::before {
             content: '';
@@ -73,8 +74,7 @@ section.details_container {
             left: 0;
             height: 100%;
             width: 100%;
-            background-color: rgba(0, 0, 0, 0.555);
-            // backdrop-filter: blur(6px);
+            background-color: rgba(0, 0, 0, 0.0555);
         }
 
         &::after {
@@ -192,9 +192,145 @@ section.details_container {
     }
 }
 
+.iam_image {
+    position: relative;
+
+    img {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 2px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: all .24s;
+    }
+
+    .social_icons_container {
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        max-width: 90%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        transition: all 0.24s;
+
+        .icon_box {
+            transform: translateY(150px);
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #adadad;
+            background-color: #ffffff0e;
+            backdrop-filter: blur(2px);
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.34s, opacity 0.2s;
+            transition-delay: var(--ic-delay);
+        }
+
+    }
+
+    &:hover {
+        &::before {
+            opacity: 1;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4), rgba(0, 0, 255, 0.185));
+        }
+
+        .icon_box {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+
+.experience_block_section {
+    margin-top: 4rem;
+    position: relative;
+
+    .experience_block {
+        height: 350px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -20px;
+            height: 100%;
+            width: 100%;
+            background-color: blue;
+            z-index: -1;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0%;
+            transform: translateX(0%);
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(90deg, rgba(0, 0, 255, 0.425) 50%, transparent 50%);
+            background-size: 3px;
+            background-repeat: repeat-x;
+            z-index: 2;
+            opacity: 0.5;
+        }
+
+        h1 {
+            padding: 1rem;
+
+            &>span {
+                font-size: 15rem;
+                font-weight: 800;
+                line-height: 1;
+                color: #000;
+                position: relative;
+                // z-index: 3;
+
+                &::before {
+                    content: '+';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    transform: translate(20%, -20%);
+                    color: #fff;
+                    font-size: 6rem;
+                    opacity: 1;
+                    z-index: 2;
+                }
+
+            }
+
+            &>div {
+                color: #000;
+                font-size: 3rem;
+                font-weight: 600;
+                text-transform: lowercase;
+                letter-spacing: 0.5px;
+                transform: rotate(-90deg);
+            }
+        }
+    }
+}
+
 .skill_stack_row {
-    background: linear-gradient(90deg, #ffffff0d, #000);
+    background: linear-gradient(90deg, #ffffff0d 50%, #000 50%);
     background-size: 3px;
     background-repeat: repeat-x;
-    // mix-blend-mode: hard-light;
 }

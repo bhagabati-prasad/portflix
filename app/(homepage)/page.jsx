@@ -3,6 +3,12 @@ import SplitTextWrapper from "@/components/SplitText"
 import "./homepge.scss"
 import GradientText from "@/components/GradientText"
 import PixelTransition from "@/components/PixelTransition"
+import SocialMediaDock from "@/components/ui/SocialMediaDock"
+
+export const metadata = {
+  title: "Home Page - My Awesome Portfolio Website",
+  description: "Welcome to my Awesome Portfolio Website",
+}
 
 export default function Page() {
   return (
@@ -63,8 +69,11 @@ export default function Page() {
       </section>
       <section className="details_container container mx-auto pb-(--section-padding)">
         <div className="grid w-full grid-cols-3 gap-5">
-          <div className="col-span-1">
+          <div className="iam_image col-span-1">
             <img src="images/IAM.png" alt="" />
+            <div className="social_icons_container">
+              <SocialMediaDock />
+            </div>
           </div>
           <div className="col-span-2">
             <div className="grid grid-cols-3">
@@ -81,43 +90,54 @@ export default function Page() {
                 </p>
               </div>
               <div className="col-span-1">
-                <div className="col-span-3">
-                  <PixelTransition
-                    firstContent={
-                      <div className="details_pixel_primary_elem">
-                        <img src="images/resume.png" alt="Resume" />
-                      </div>
-                    }
-                    secondContent={
-                      <div
-                        className="pixel_trans_sec"
+                <PixelTransition
+                  firstContent={
+                    <div className="details_pixel_primary_elem">
+                      <img src="images/resume.png" alt="Resume" />
+                    </div>
+                  }
+                  secondContent={
+                    <div
+                      className="pixel_trans_sec"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        display: "grid",
+                        placeItems: "center",
+                        backgroundColor: "#29076f",
+                      }}
+                    >
+                      <p
                         style={{
-                          width: "100%",
-                          height: "100%",
-                          display: "grid",
-                          placeItems: "center",
-                          backgroundColor: "#29076f",
+                          fontWeight: 900,
+                          fontSize: "3rem",
+                          color: "#ffffff",
                         }}
                       >
-                        <p
-                          style={{
-                            fontWeight: 900,
-                            fontSize: "3rem",
-                            color: "#ffffff",
-                          }}
-                        >
-                          Download Resume
-                        </p>
-                      </div>
-                    }
-                    gridSize={8}
-                    pixelColor="#ffffff"
-                    once={false}
-                    animationStepDuration={0.4}
-                    className="custom-pixel-card w-full"
-                  />
-                </div>
+                        Download Resume
+                      </p>
+                    </div>
+                  }
+                  gridSize={8}
+                  pixelColor="#ffffff"
+                  once={false}
+                  animationStepDuration={0.4}
+                  className="custom-pixel-card w-full"
+                />
               </div>
+            </div>
+            <div className="experience_block_section grid grid-cols-4">
+              <div className="experience_block col-span-2 flex items-center justify-start">
+                <h1 className="flex w-full items-center justify-between gap-4">
+                  <span>4</span>
+                  <div className="flex flex-col">
+                    <span>years</span>
+                    <span>experience</span>
+                  </div>
+                </h1>
+              </div>
+              {/* <div className="col-span-1">
+              </div> */}
             </div>
           </div>
         </div>
