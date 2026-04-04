@@ -39,3 +39,14 @@ body {
   color: var(--foreground);
   font-family: var(--primary-font-family);
 }
+
+a {
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+  transition: all 0.24s;
+
+  &:hover {
+    color: #4060ff;
+  }
+}

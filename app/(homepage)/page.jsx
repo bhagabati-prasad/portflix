@@ -4,6 +4,8 @@ import "./homepge.scss"
 import GradientText from "@/components/GradientText"
 import PixelTransition from "@/components/PixelTransition"
 import SocialMediaDock from "@/components/ui/SocialMediaDock"
+import Footer from "@/components/ui/Footer"
+import GotoTop from "@/components/ui/GotoTop"
 
 export const metadata = {
   title: "Home Page - My Awesome Portfolio Website",
@@ -153,42 +155,33 @@ export default function Page() {
               amet.
             </h2>
             <div className="skill_stack_row w-full">
-              <div className="grid grid-cols-12">
-                <div className="col-span-1 flex items-center">
-                  <h4 className="-rotate-90">Frontend</h4>
-                </div>
-                <div className="col-span-11 flex flex-wrap items-center justify-start">
-                  <div className="honeycomb_box">
-                    <span className="honeycomb_box_content">React.js</span>
+              {[1, 2, 3].map((item, index) => (
+                <div key={index} className="grid grid-cols-12">
+                  <div className="col-span-1 flex items-center">
+                    <h4 className="-rotate-90">Frontend</h4>
                   </div>
-                  <div className="honeycomb_box">
-                    <span className="honeycomb_box_content">Angular</span>
-                  </div>
-                  <div className="honeycomb_box">
-                    <span className="honeycomb_box_content">TypeScript</span>
-                  </div>
-                </div>
-              </div>
-              <div className="grid grid-cols-12">
-                <div className="col-span-1 flex items-center">
-                  <h4 className="-rotate-90">backend</h4>
-                </div>
-                <div className="col-span-11 flex flex-wrap items-center justify-start">
-                  <div className="honeycomb_box">
-                    <span className="honeycomb_box_content">React.js</span>
-                  </div>
-                  <div className="honeycomb_box">
-                    <span className="honeycomb_box_content">Angular</span>
-                  </div>
-                  <div className="honeycomb_box">
-                    <span className="honeycomb_box_content">TypeScript</span>
+                  <div className="col-span-11 flex flex-wrap items-center justify-start">
+                    <div className="honeycomb_box">
+                      <span className="honeycomb_box_content">React.js</span>
+                    </div>
+                    <div className="honeycomb_box">
+                      <span className="honeycomb_box_content">Angular</span>
+                    </div>
+                    <div className="honeycomb_box">
+                      <span className="honeycomb_box_content">TypeScript</span>
+                    </div>
                   </div>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <Footer />
+
+      <GotoTop />
     </>
   )
 }

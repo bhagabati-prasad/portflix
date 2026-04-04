@@ -1,0 +1,63 @@
+footer {
+    background: linear-gradient(90deg, rgba(43, 43, 43, 0.253) 50%, transparent 50%);
+    background-size: 3px;
+    background-repeat: repeat-x;
+
+    .footer_brand {
+        font-size: 12vw;
+        margin: 4rem 0;
+    }
+}
+
+.variable-proximity .variable_proximity_single_block_text {
+    display: flex !important;
+    align-items: flex-end;
+    line-height: 1;
+    background: linear-gradient(to bottom, #fff, #fff);
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    // &:nth-child(1) {
+    //     font-size: 12vw;
+    // }
+
+    // &:nth-child(2) {
+    //     font-size: 11vw;
+    // }
+
+    // &:nth-child(3) {
+    //     font-size: 10vw;
+    // }
+
+    // &:nth-child(4) {
+    //     font-size: 9vw;
+    // }
+
+    // &:nth-child(5) {
+    //     font-size: 9.5vw;
+    // }
+
+    // &:nth-child(6) {
+    //     font-size: 10vw;
+    // }
+
+    // &:nth-child(7) {
+    //     font-size: 11vw;
+    // }
+
+    // &:nth-child(8) {
+    //     font-size: 12vw;
+    // }
+}
+
+
+
+.heart_icon {
+    display: inline-block;
+    width: 200px;
+    aspect-ratio: 1;
+    border-image: radial-gradient(blue 69%, #0000 70%) 84.5%/50%;
+    clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+}
