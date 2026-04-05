@@ -13,18 +13,23 @@
   --border-radius: 6px;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 *::selection {
   color: rgb(187, 186, 255);
   background: rgba(75, 28, 170, 0.432);
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  scroll-behavior: smooth;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 .container {

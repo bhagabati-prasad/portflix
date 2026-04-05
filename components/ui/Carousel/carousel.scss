@@ -1,0 +1,92 @@
+.embla {
+    max-width: 100%;
+    height: 100%;
+    margin: auto;
+
+    &__viewport {
+        height: calc(100% - 45px);
+        overflow: hidden;
+    }
+
+    &__container {
+        height: 100%;
+        display: flex;
+        touch-action: pan-y pinch-zoom;
+        margin-left: calc(1rem * -1);
+    }
+
+    &__slide {
+        padding: 1rem;
+        flex: 0 0 100%;
+        min-width: 0;
+        background-color: #111;
+        padding: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slide_desc_container {
+        display: flex;
+        flex-direction: column;
+
+        p.experience_single_description {
+            font-size: 1rem;
+        }
+    }
+}
+
+// Slider tab section
+.embla-thumbs {
+    margin: 0;
+
+    &__viewport {
+        overflow: hidden;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    // Carousel thumb container
+    &__slide {
+        flex: 0 0 22%;
+        min-width: 0;
+        height: 45px;
+
+        button.embla-thumbs__slide__number {
+            height: 100%;
+            -webkit-appearance: none;
+            appearance: none;
+            background-color: transparent;
+            touch-action: manipulation;
+            display: inline-flex;
+            text-decoration: none;
+            cursor: pointer;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            transition: all .24s;
+        }
+
+        &--selected .embla-thumbs__slide__number {
+            color: var(--text-body);
+            background-color: blue !important;
+        }
+    }
+}
+
+
+
+
+@media (min-width: 576px) {
+    .embla-thumbs__slide {
+        flex: 0 0 15%;
+    }
+}

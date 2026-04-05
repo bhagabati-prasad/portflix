@@ -4,8 +4,9 @@ import "./homepge.scss"
 import GradientText from "@/components/GradientText"
 import PixelTransition from "@/components/PixelTransition"
 import SocialMediaDock from "@/components/ui/SocialMediaDock"
-import Footer from "@/components/ui/Footer"
+import Footer from "@/components/ui/Footer/Footer"
 import GotoTop from "@/components/ui/GotoTop"
+import Experience from "@/components/Experience/Experience"
 
 export const metadata = {
   title: "Home Page - My Awesome Portfolio Website",
@@ -177,6 +178,9 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      {/* Projects */}
+      <Experience />
 
       {/* Footer */}
       <Footer />
