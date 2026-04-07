@@ -190,12 +190,13 @@ const VariableProximity = forwardRef((props, ref) => {
 })
 
 VariableProximity.displayName = "VariableProximity"
-const VariableProximityRender = ({ label }) => {
+const VariableProximityRender = ({ label, customClassName }) => {
   const containerRef = useRef(null)
 
   return (
     <div
       ref={containerRef}
+      className={customClassName}
       style={{ display: "flex", width: "100%", position: "relative" }}
     >
       <VariableProximity

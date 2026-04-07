@@ -11,21 +11,8 @@ const Experience = () => {
       from: 2022,
       to: 2024,
       companyName: "Rumango",
+      city: "Bangalore",
       role: "Senior Software Engineer",
-      description: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nihil.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nihil.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nihil.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nihil.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nihil.",
-      ],
-    },
-    {
-      id: 2,
-      from: 2020,
-      to: 2022,
-      companyName: "AI COE",
-      role: "Software Engineer - Intern",
       description: [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nihil.",
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nihil.",

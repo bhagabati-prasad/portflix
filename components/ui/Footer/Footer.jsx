@@ -9,8 +9,13 @@ const Footer = () => {
       <div className="footer container mx-auto pt-10">
         <div className="container mx-auto flex flex-col">
           <div className="footer_brand pointer-events-none w-full select-none">
-            {/* <div className="footer_brand w-full"> */}
-            <VariableProximity label="PORTFLIX" />
+            <div className="mb-2 w-20 text-2xl">
+              <VariableProximity label="THE" />
+            </div>
+            <VariableProximity
+              label="PORTFLEX"
+              customClassName="footer_brand_text"
+            />
           </div>
 
           <div className="mb-8 grid grid-cols-12">

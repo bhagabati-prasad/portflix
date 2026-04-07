@@ -1,7 +1,11 @@
 footer {
-    background: linear-gradient(90deg, rgba(43, 43, 43, 0.253) 50%, transparent 50%);
-    background-size: 3px;
-    background-repeat: repeat-x;
+    // background: linear-gradient(90deg, rgba(43, 43, 43, 0.253) 50%, transparent 50%);
+    // background-size: 3px;
+    // background-repeat: repeat-x;
+
+    background: linear-gradient(91deg, #c7c7c70a, #000);
+    background-size: 5px;
+    background-repeat: repeat;
 
     .footer_brand {
         font-size: 12vw;
@@ -19,37 +23,19 @@ footer {
     background-clip: text;
     -webkit-background-clip: text;
 
-    // &:nth-child(1) {
-    //     font-size: 12vw;
-    // }
 
-    // &:nth-child(2) {
-    //     font-size: 11vw;
-    // }
 
-    // &:nth-child(3) {
-    //     font-size: 10vw;
-    // }
+}
 
-    // &:nth-child(4) {
-    //     font-size: 9vw;
-    // }
-
-    // &:nth-child(5) {
-    //     font-size: 9.5vw;
-    // }
-
-    // &:nth-child(6) {
-    //     font-size: 10vw;
-    // }
-
-    // &:nth-child(7) {
-    //     font-size: 11vw;
-    // }
-
-    // &:nth-child(8) {
-    //     font-size: 12vw;
-    // }
+.footer_brand_text {
+    .variable-proximity .variable_proximity_single_block_text {
+        &:first-child {
+            background-color: #fff;
+            color: #000;
+            -webkit-text-fill-color: #000;
+            background-clip: unset;
+        }
+    }
 }
 
 
