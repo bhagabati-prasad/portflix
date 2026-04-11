@@ -40,6 +40,7 @@ const EmblaCarousel = (props) => {
         <div className="embla__container">
           {slides.map((slide, index) => (
             <div className="embla__slide" key={index}>
+              <span className="slide_count">{"0" + (index + 1)}</span>
               <div className="flex flex-col gap-1">
                 <h1 className="mb-4 text-5xl font-semibold text-(--primary-action-color) capitalize">
                   {slide?.companyName}
@@ -53,13 +54,13 @@ const EmblaCarousel = (props) => {
                   <h2 className="text-base capitalize">{slide?.city}</h2>
                 </div>
               </div>
-              <div className="slide_desc_container mt-4">
+              <ul className="slide_desc_container mt-4 w-2/3">
                 {slide?.description?.map((item, indx) => (
-                  <p key={indx} className="experience_single_description">
+                  <li key={indx} className="experience_single_description">
                     {item}
-                  </p>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           ))}
         </div>

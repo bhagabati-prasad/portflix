@@ -13,7 +13,7 @@ const Footer = () => {
               <VariableProximity label="THE" />
             </div>
             <VariableProximity
-              label="PORTFLEX"
+              label="PORTFLiX"
               customClassName="footer_brand_text"
             />
           </div>

@@ -1,5 +1,5 @@
 import "./experience.scss"
-import EmblaCarousel from "../ui/Carousel/EmblaCarousel"
+import EmblaCarousel from "../Carousel/EmblaCarousel"
 
 const Experience = () => {
   const OPTIONS = {}
@@ -14,11 +14,12 @@ const Experience = () => {
       city: "Bangalore",
       role: "Senior Software Engineer",
       description: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nihil.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nihil.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nihil.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nihil.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nihil.",
+        "Led development of scalable web applications using React, Angular, Node.js, and Python across multiple enterprise systems. ",
+        "Designed and implemented secure authentication systems, including multi-factor authentication and biometric verification. ",
+        "Architected and optimized backend services for high performance using caching, concurrency, and efficient data handling using . ",
+        "Mentored junior developers, conducted code reviews, and enforced best practices for clean and maintainable code. ",
+        "Collaborated with cross-functional teams to deliver end-to-end solutions from requirement analysis to deployment. ",
+        "Improved system performance, reliability, and user experience across critical business applications. ",
       ],
     },
   ]

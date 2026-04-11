@@ -1,5 +1,6 @@
 import ClickSpark from "@/components/ClickSpark"
 import "./globals.css"
+import Header from "@/components/ui/Header/Header"
 
 export default function RootLayout({ children }) {
   return (
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
           sparkCount={8}
           duration={400}
         >
+          <Header />
           {children}
         </ClickSpark>
       </body>

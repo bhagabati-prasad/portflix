@@ -6,7 +6,7 @@ import PixelTransition from "@/components/PixelTransition"
 import SocialMediaDock from "@/components/ui/SocialMediaDock"
 import Footer from "@/components/ui/Footer/Footer"
 import GotoTop from "@/components/ui/GotoTop"
-import Experience from "@/components/Experience/Experience"
+import Experience from "@/components/ui/Experience/Experience"
 
 export const metadata = {
   title: "Home Page - My Awesome Portfolio Website",
@@ -92,7 +92,7 @@ export default function Page() {
                   laboriosam praesentium quae totam.
                 </p>
               </div>
-              <div className="col-span-1">
+              <div className="col-span-1 cursor-pointer">
                 <PixelTransition
                   firstContent={
                     <div className="details_pixel_primary_elem">
@@ -113,8 +113,9 @@ export default function Page() {
                       <p
                         style={{
                           fontWeight: 900,
-                          fontSize: "3rem",
+                          fontSize: "2rem",
                           color: "#ffffff",
+                          padding: "16px",
                         }}
                       >
                         Download Resume
@@ -124,7 +125,7 @@ export default function Page() {
                   gridSize={8}
                   pixelColor="#ffffff"
                   once={false}
-                  animationStepDuration={0.4}
+                  animationStepDuration={0.2}
                   className="custom-pixel-card w-full"
                 />
               </div>
